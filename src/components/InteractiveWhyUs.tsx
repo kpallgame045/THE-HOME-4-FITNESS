@@ -62,7 +62,7 @@ export const InteractiveWhyUs: React.FC<InteractiveWhyUsProps> = ({ onNavigate }
       <WhyUsFloatingGraphics />
 
       {/* Giant Transparent "02" Background Number */}
-      <div className="absolute right-4 top-1/2 -translate-y-1/2 text-[16rem] sm:text-[24rem] font-display font-extrabold text-white/[0.02] select-none pointer-events-none z-0">
+      <div className="hidden sm:block absolute right-4 top-1/2 -translate-y-1/2 text-[24rem] font-display font-extrabold text-white/[0.02] select-none pointer-events-none z-0">
         02
       </div>
 

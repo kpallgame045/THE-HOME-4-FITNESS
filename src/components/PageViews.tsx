@@ -570,52 +570,85 @@ export const PageViews: React.FC<PageViewsProps> = ({ activeView, onNavigate }) 
 
       {/* ================= 3. PROGRAMS VIEW ================= */}
       {activeView === 'programs' && (
-        <div className="space-y-16">
-          <div className="relative h-[40vh] min-h-[300px] w-full flex items-center justify-center overflow-hidden bg-black border-b border-zinc-900">
+        <div className="space-y-12 sm:space-y-16 pb-16">
+          {/* Hero Banner with Proper Header Clearance */}
+          <div className="relative py-12 sm:py-20 w-full flex items-center justify-center overflow-hidden bg-black border-b border-zinc-900">
             <img
               src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop"
-              alt="Training Programs"
-              className="w-full h-full object-cover filter brightness-[0.35] contrast-[1.25]"
+              alt="Training Programs at Home 4 Fitness"
+              className="absolute inset-0 w-full h-full object-cover filter brightness-[0.35] contrast-[1.25]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-            <div className="relative z-10 max-w-5xl mx-auto px-4 text-center space-y-4">
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+            <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-3">
               <GSAPOneTimeBrandReveal>
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-600/10 border border-red-600/30 text-red-500 text-[10px] sm:text-xs font-mono tracking-widest uppercase mb-2">
+                  HOME 4 FITNESS DISCIPLINES · SECTOR 8 GANDHINAGAR
+                </div>
                 <EditorialHeadingReveal
                   as="h1"
                   text="TRAIN WITH"
                   redText="PURPOSE."
-                  className="text-4xl sm:text-7xl"
+                  className="text-3xl sm:text-7xl"
                 />
+                <p className="text-zinc-300 text-xs sm:text-base max-w-xl mx-auto mt-2 font-normal leading-relaxed">
+                  Structured weight training, stamina conditioning, muscle group splits, and personal coaching in Sector 8, Gandhinagar.
+                </p>
               </GSAPOneTimeBrandReveal>
             </div>
           </div>
 
+          {/* Program Cards List */}
           <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-4 sm:space-y-6">
             {[
-              { num: '01', title: 'BUILD STRENGTH', desc: 'Focus on compound movements, strength building, deadlifts, squats, and power routines.' },
-              { num: '02', title: 'IMPROVE FITNESS', desc: 'Cardiovascular endurance, stamina building, fat reduction, and agility splits.' },
-              { num: '03', title: 'MUSCLE & FITNESS TRAINING', desc: 'Targeted muscle group splits and structured body re-composition routines.' },
-              { num: '04', title: 'WEIGHT MANAGEMENT', desc: 'High intensity interval training (HIIT), metabolic conditioning, and active cardio.' },
-              { num: '05', title: 'GENERAL GYM TRAINING', desc: 'Daily fitness routine conditioning for healthy active living.' },
+              { num: '01', category: 'STRENGTH & HYPERTROPHY', title: 'BUILD STRENGTH', desc: 'Focus on compound movements, strength building, deadlifts, squats, and progressive resistance routines.' },
+              { num: '02', category: 'ENDURANCE & STAMINA', title: 'IMPROVE FITNESS', desc: 'Cardiovascular endurance, stamina building, fat reduction, and agility splits designed for stamina.' },
+              { num: '03', category: 'TARGETED SPLITS', title: 'MUSCLE & FITNESS TRAINING', desc: 'Targeted muscle group splits and structured body re-composition routines for consistent progress.' },
+              { num: '04', category: 'METABOLIC CONDITIONING', title: 'WEIGHT MANAGEMENT', desc: 'High intensity interval training (HIIT), metabolic conditioning, and active cardio floor workouts.' },
+              { num: '05', category: 'DAILY ATHLETIC DISCIPLINE', title: 'GENERAL GYM TRAINING', desc: 'Daily fitness routine conditioning and habit development for healthy active living in Sector 8.' },
             ].map((prog, idx) => (
               <GSAPOneTimeBrandReveal key={idx} delay={idx * 0.08}>
                 <div className="bg-zinc-950 p-5 sm:p-8 border border-zinc-800 corner-brackets flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-6 hover:border-red-600 transition-colors max-w-full overflow-hidden">
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 max-w-full overflow-hidden">
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-6 max-w-full overflow-hidden">
                     <span className="text-3xl sm:text-4xl font-display font-extrabold text-red-500 shrink-0">{prog.num}</span>
                     <div className="max-w-full overflow-hidden">
+                      <span className="text-[10px] font-mono text-red-500 tracking-widest uppercase block mb-1">
+                        {prog.category}
+                      </span>
                       <h3 className="text-lg sm:text-2xl font-display font-extrabold uppercase text-white tracking-tight break-words max-w-full">{prog.title}</h3>
-                      <p className="text-xs text-zinc-400 max-w-md mt-1 leading-relaxed">{prog.desc}</p>
+                      <p className="text-xs text-zinc-400 max-w-md mt-1.5 leading-relaxed">{prog.desc}</p>
                     </div>
                   </div>
                   <button
                     onClick={() => onNavigate('contact')}
-                    className="w-full sm:w-auto px-6 py-3.5 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs uppercase tracking-widest shrink-0 cursor-pointer text-center transition-colors"
+                    className="w-full sm:w-auto px-6 py-3.5 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs uppercase tracking-widest shrink-0 cursor-pointer text-center transition-colors shadow-[0_0_20px_rgba(229,9,20,0.4)]"
                   >
                     INQUIRE AT GYM →
                   </button>
                 </div>
               </GSAPOneTimeBrandReveal>
             ))}
+          </div>
+
+          {/* Bottom Programs CTA */}
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <GSAPOneTimeBrandReveal>
+              <div className="bg-zinc-950 p-8 sm:p-12 border border-zinc-800 corner-brackets text-center space-y-6">
+                <h2 className="text-2xl sm:text-5xl font-display font-extrabold uppercase text-white tracking-tight">
+                  READY TO START <span className="text-red-600">TRAINING?</span>
+                </h2>
+                <p className="text-zinc-300 text-xs sm:text-base max-w-xl mx-auto leading-relaxed">
+                  Visit Home 4 Fitness in Sector 8, Gandhinagar to talk with our team and choose the right workout split for your goals.
+                </p>
+                <div className="pt-2">
+                  <button
+                    onClick={() => onNavigate('contact')}
+                    className="w-full sm:w-auto px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs sm:text-sm uppercase tracking-widest shadow-[0_0_30px_rgba(229,9,20,0.6)] cursor-pointer"
+                  >
+                    VISIT GYM IN SECTOR 8 →
+                  </button>
+                </div>
+              </div>
+            </GSAPOneTimeBrandReveal>
           </div>
         </div>
       )}

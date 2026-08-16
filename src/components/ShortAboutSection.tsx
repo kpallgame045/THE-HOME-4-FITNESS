@@ -17,7 +17,7 @@ export const ShortAboutSection: React.FC<ShortAboutSectionProps> = ({ onNavigate
       <AboutFloatingGraphics />
 
       {/* Giant Transparent "01" Background Number */}
-      <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[16rem] sm:text-[24rem] font-display font-extrabold text-white/[0.02] select-none pointer-events-none z-0">
+      <div className="hidden sm:block absolute left-4 top-1/2 -translate-y-1/2 text-[24rem] font-display font-extrabold text-white/[0.02] select-none pointer-events-none z-0">
         01
       </div>
 
