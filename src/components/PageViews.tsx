@@ -349,7 +349,7 @@ export const PageViews: React.FC<PageViewsProps> = ({ activeView, onNavigate }) 
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
                   <div className="lg:col-span-7 space-y-6">
-                    <h1 className="text-4xl sm:text-6xl lg:text-7xl font-display font-extrabold tracking-tighter uppercase text-white leading-[0.92]">
+                    <h1 className="text-3xl sm:text-6xl lg:text-7xl font-display font-extrabold tracking-tighter uppercase text-white leading-[0.95] break-words overflow-visible max-w-full">
                       TRAIN DIFFERENT. <br />
                       <span className="text-red-600 text-stroke-red drop-shadow-[0_0_35px_rgba(229,9,20,0.6)]">
                         GET STRONGER.
@@ -845,7 +845,7 @@ export const PageViews: React.FC<PageViewsProps> = ({ activeView, onNavigate }) 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
                   {/* Left Column: Headline */}
                   <div className="lg:col-span-7 space-y-6">
-                    <h1 className="text-4xl sm:text-6xl lg:text-7xl font-display font-extrabold tracking-tighter uppercase text-white leading-[0.92]">
+                    <h1 className="text-3xl sm:text-6xl lg:text-7xl font-display font-extrabold tracking-tighter uppercase text-white leading-[0.95] break-words overflow-visible max-w-full">
                       LET'S BUILD <br />
                       <span className="text-red-600 text-stroke-red drop-shadow-[0_0_35px_rgba(229,9,20,0.6)]">
                         YOUR STRONGER SELF.

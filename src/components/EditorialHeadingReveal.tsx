@@ -64,14 +64,14 @@ export const EditorialHeadingReveal: React.FC<EditorialHeadingRevealProps> = ({
   return (
     <div ref={containerRef} className="overflow-hidden py-1">
       <Tag className={`font-display font-extrabold uppercase tracking-tighter leading-[0.92] ${className}`}>
-        <div className="overflow-hidden mb-1">
-          <span className="editorial-mask-content inline-block text-white transform-gpu will-change-transform">
+        <div className="overflow-hidden mb-1 max-w-full">
+          <span className="editorial-mask-content inline-block max-w-full break-words text-white transform-gpu will-change-transform">
             {text}
           </span>
         </div>
         {redText && (
-          <div className="overflow-hidden">
-            <span className="editorial-mask-content inline-block text-red-600 text-stroke-red drop-shadow-[0_0_35px_rgba(229,9,20,0.7)] transform-gpu will-change-transform">
+          <div className="overflow-hidden max-w-full">
+            <span className="editorial-mask-content inline-block max-w-full break-words text-red-600 text-stroke-red drop-shadow-[0_0_35px_rgba(229,9,20,0.7)] transform-gpu will-change-transform">
               {redText}
             </span>
           </div>

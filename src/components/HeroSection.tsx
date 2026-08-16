@@ -49,56 +49,56 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
         <div className="w-full h-[2px] bg-gradient-to-r from-red-600 via-red-500 to-transparent mb-8 shadow-[0_0_20px_#e50914]" />
 
         {/* Editorial Masked Headline */}
-        <div className="space-y-1 sm:space-y-2 mb-8">
+        <div className="space-y-1 sm:space-y-2 mb-6 sm:mb-8 overflow-hidden">
           <EditorialHeadingReveal
             as="h1"
             text="BUILD YOUR"
             redText="STRENGTH."
-            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
+            className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tighter"
           />
           <EditorialHeadingReveal
             as="h2"
             text="ELEVATE YOUR"
             redText="FITNESS."
-            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
+            className="text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tighter"
           />
         </div>
 
         {/* Sub-Heading & Feature Highlights */}
-        <div className="max-w-2xl mb-10">
-          <p className="text-sm sm:text-base md:text-lg text-zinc-300 font-normal leading-relaxed mb-6">
+        <div className="max-w-2xl mb-8 sm:mb-10">
+          <p className="text-xs sm:text-base md:text-lg text-zinc-300 font-normal leading-relaxed mb-6">
             Sector 8 Gandhinagar's premier fitness destination. Built for real strength training, cardio endurance, state-of-the-art equipment, and dedicated personal coach guidance.
           </p>
 
-          <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-zinc-400">
-            <div className="flex items-center gap-1.5 bg-zinc-950/80 px-3 py-1.5 border border-zinc-800">
-              <Flame className="w-4 h-4 text-red-500" />
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-[11px] sm:text-xs font-mono text-zinc-400">
+            <div className="flex items-center gap-1.5 bg-zinc-950/80 px-2.5 py-1.5 border border-zinc-800">
+              <Flame className="w-3.5 h-3.5 text-red-500" />
               <span>STRENGTH & HYPERTROPHY</span>
             </div>
-            <div className="flex items-center gap-1.5 bg-zinc-950/80 px-3 py-1.5 border border-zinc-800">
-              <Zap className="w-4 h-4 text-red-500" />
+            <div className="flex items-center gap-1.5 bg-zinc-950/80 px-2.5 py-1.5 border border-zinc-800">
+              <Zap className="w-3.5 h-3.5 text-red-500" />
               <span>CARDIO & STAMINA</span>
             </div>
-            <div className="flex items-center gap-1.5 bg-zinc-950/80 px-3 py-1.5 border border-zinc-800">
-              <Shield className="w-4 h-4 text-red-500" />
+            <div className="flex items-center gap-1.5 bg-zinc-950/80 px-2.5 py-1.5 border border-zinc-800">
+              <Shield className="w-3.5 h-3.5 text-red-500" />
               <span>PERSONAL COACHING</span>
             </div>
           </div>
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-6">
           <button
             onClick={() => onNavigate('join-now')}
-            className="group relative overflow-hidden px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-[0_0_35px_rgba(229,9,20,0.6)] hover:shadow-[0_0_55px_rgba(229,9,20,0.9)] flex items-center gap-2 cursor-pointer"
+            className="group relative overflow-hidden w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-[0_0_35px_rgba(229,9,20,0.6)] hover:shadow-[0_0_55px_rgba(229,9,20,0.9)] flex items-center justify-center gap-2 cursor-pointer"
           >
             <span>JOIN HOME 4 FITNESS</span>
-            <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+            <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
           </button>
 
           <button
             onClick={() => onNavigate('programs')}
-            className="px-8 py-4 bg-zinc-900/90 hover:bg-zinc-800 text-zinc-200 hover:text-white font-bold text-xs sm:text-sm uppercase tracking-widest border border-zinc-700 transition-all duration-300 flex items-center gap-2 cursor-pointer"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-zinc-900/90 hover:bg-zinc-800 text-zinc-200 hover:text-white font-bold text-xs sm:text-sm uppercase tracking-widest border border-zinc-700 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
           >
             <span>EXPLORE PROGRAMS</span>
           </button>

@@ -81,7 +81,7 @@ export const GSAPOneTimeBrandReveal: React.FC<GSAPOneTimeBrandRevealProps> = ({
   }, [delay]);
 
   return (
-    <div ref={containerRef} className={`will-change-transform ${className}`}>
+    <div ref={containerRef} className={`will-change-transform max-w-full overflow-x-hidden ${className}`}>
       {children}
     </div>
   );

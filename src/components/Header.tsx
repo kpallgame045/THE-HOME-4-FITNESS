@@ -55,7 +55,7 @@ export const Header: React.FC<HeaderProps> = ({ activeView, onNavigate }) => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-[9999] pointer-events-none px-3 sm:px-6 lg:px-8 pt-3 sm:pt-4">
+    <header className="fixed top-0 left-0 right-0 z-[9999] pointer-events-none px-2 sm:px-6 lg:px-8 pt-2 sm:pt-4">
       {/* FLOATING 3D GLASS NAVIGATION CONTAINER */}
       <div
         ref={headerRef}
@@ -65,14 +65,12 @@ export const Header: React.FC<HeaderProps> = ({ activeView, onNavigate }) => {
           mounted ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-6'
         } ${
           scrolled
-            ? 'bg-[#080808]/90 backdrop-blur-xl border border-white/10 shadow-[0_12px_40px_rgba(0,0,0,0.9),0_0_25px_rgba(229,9,20,0.25)] py-2 px-4 sm:px-6 scale-[0.98]'
-            : 'bg-[#080808]/75 backdrop-blur-lg border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.7),0_0_15px_rgba(229,9,20,0.15)] py-3 px-5 sm:px-7 scale-100'
+            ? 'bg-[#080808]/90 backdrop-blur-xl border border-white/10 shadow-[0_12px_40px_rgba(0,0,0,0.9),0_0_25px_rgba(229,9,20,0.25)] py-2 px-3 sm:px-6'
+            : 'bg-[#080808]/75 backdrop-blur-lg border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.7),0_0_15px_rgba(229,9,20,0.15)] py-2.5 px-3.5 sm:px-7'
         }`}
         style={{
           perspective: 1000,
-          transform: `perspective(1000px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg) ${
-            scrolled ? 'scale(0.98)' : 'scale(1)'
-          }`,
+          transform: `perspective(1000px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`,
         }}
       >
         <div className="flex items-center justify-between gap-4">
