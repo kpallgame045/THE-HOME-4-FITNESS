@@ -24,7 +24,7 @@ export const ShortAboutSection: React.FC<ShortAboutSectionProps> = ({ onNavigate
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <GSAPOneTimeBrandReveal>
           {/* Animated Red Drawing Line */}
-          <div className="w-full h-[2px] bg-gradient-to-r from-red-600 via-red-500 to-transparent mb-8 shadow-[0_0_15px_#e50914]" />
+          <div className="w-full h-[1.5px] bg-gradient-to-r from-red-600/80 via-zinc-800 to-transparent mb-8" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             {/* LEFT: CINEMATIC IMAGE WITH REVEAL */}

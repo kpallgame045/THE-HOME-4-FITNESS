@@ -76,8 +76,8 @@ body,
 }
 
 .text-stroke-red {
-  -webkit-text-stroke: 1.5px #e50914;
-  color: #e50914;
+  -webkit-text-stroke: 1px #dc2626;
+  color: #dc2626;
 }
 
 .text-stroke-thick {
@@ -94,12 +94,12 @@ body,
   clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
 }
 
-/* Red Ambient Radial Glow */
+/* Red Ambient Radial Glow (Subtle & Elegant) */
 .red-ambient-glow {
-  background: radial-gradient(circle at 50% 50%, rgba(229, 9, 20, 0.18) 0%, rgba(8, 8, 10, 0) 70%);
+  background: radial-gradient(circle at 50% 50%, rgba(220, 38, 38, 0.08) 0%, rgba(8, 8, 10, 0) 70%);
 }
 
-/* Corner Bracket Accents */
+/* Corner Bracket Accents (Subtle Deep Red Details) */
 .corner-brackets {
   position: relative;
 }
@@ -108,10 +108,10 @@ body,
   position: absolute;
   top: -2px;
   left: -2px;
-  width: 16px;
-  height: 16px;
-  border-top: 2px solid #e50914;
-  border-left: 2px solid #e50914;
+  width: 14px;
+  height: 14px;
+  border-top: 1.5px solid #b91c1c;
+  border-left: 1.5px solid #b91c1c;
   pointer-events: none;
 }
 .corner-brackets::after {
@@ -119,9 +119,9 @@ body,
   position: absolute;
   bottom: -2px;
   right: -2px;
-  width: 16px;
-  height: 16px;
-  border-bottom: 2px solid #e50914;
-  border-right: 2px solid #e50914;
+  width: 14px;
+  height: 14px;
+  border-bottom: 1.5px solid #b91c1c;
+  border-right: 1.5px solid #b91c1c;
   pointer-events: none;
 }

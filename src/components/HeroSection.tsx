@@ -46,7 +46,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
       {/* 3. HERO MAIN CONTENT */}
       <div className="relative z-10 max-w-7xl mx-auto w-full flex-grow flex flex-col justify-center py-6">
         {/* Animated Thin Red Line */}
-        <div className="w-full h-[2px] bg-gradient-to-r from-red-600 via-red-500 to-transparent mb-8 shadow-[0_0_20px_#e50914]" />
+        <div className="w-full h-[1.5px] bg-gradient-to-r from-red-600/80 via-zinc-800 to-transparent mb-8" />
 
         {/* Editorial Masked Headline */}
         <div className="space-y-1 sm:space-y-2 mb-6 sm:mb-8 overflow-hidden">
@@ -90,7 +90,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-6">
           <button
             onClick={() => onNavigate('join-now')}
-            className="group relative overflow-hidden w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-[0_0_35px_rgba(229,9,20,0.6)] hover:shadow-[0_0_55px_rgba(229,9,20,0.9)] flex items-center justify-center gap-2 cursor-pointer"
+            className="group relative overflow-hidden w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(220,38,38,0.35)] hover:shadow-[0_0_35px_rgba(220,38,38,0.6)] flex items-center justify-center gap-2 cursor-pointer"
           >
             <span>JOIN HOME 4 FITNESS</span>
             <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />

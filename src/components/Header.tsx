@@ -94,7 +94,7 @@ export const Header: React.FC<HeaderProps> = ({ activeView, onNavigate }) => {
               >
                 {item.label}
                 {activeView === item.id ? (
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-red-600 shadow-[0_0_12px_#e50914]" />
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-red-600 shadow-[0_0_8px_rgba(220,38,38,0.5)]" />
                 ) : (
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full" />
                 )}
@@ -124,7 +124,7 @@ export const Header: React.FC<HeaderProps> = ({ activeView, onNavigate }) => {
 
             <button
               onClick={() => handleNavClick('join-now')}
-              className="relative group overflow-hidden px-5 py-2 bg-red-600 hover:bg-red-700 active:scale-[0.97] text-white text-xs font-extrabold uppercase tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(229,9,20,0.5)] hover:shadow-[0_0_30px_rgba(229,9,20,0.8)] hover:-translate-y-0.5 flex items-center gap-1 rounded-lg cursor-pointer"
+              className="relative group overflow-hidden px-5 py-2 bg-red-600 hover:bg-red-700 active:scale-[0.97] text-white text-xs font-extrabold uppercase tracking-widest transition-all duration-300 shadow-[0_0_15px_rgba(220,38,38,0.35)] hover:shadow-[0_0_25px_rgba(220,38,38,0.6)] hover:-translate-y-0.5 flex items-center gap-1 rounded-lg cursor-pointer"
             >
               <span className="relative z-10">CONNECT</span>
               <ArrowUpRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
