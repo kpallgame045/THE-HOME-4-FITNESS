@@ -590,7 +590,7 @@ export const PageViews: React.FC<PageViewsProps> = ({ activeView, onNavigate }) 
             </div>
           </div>
 
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-6">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-4 sm:space-y-6">
             {[
               { num: '01', title: 'BUILD STRENGTH', desc: 'Focus on compound movements, strength building, deadlifts, squats, and power routines.' },
               { num: '02', title: 'IMPROVE FITNESS', desc: 'Cardiovascular endurance, stamina building, fat reduction, and agility splits.' },
@@ -599,17 +599,17 @@ export const PageViews: React.FC<PageViewsProps> = ({ activeView, onNavigate }) 
               { num: '05', title: 'GENERAL GYM TRAINING', desc: 'Daily fitness routine conditioning for healthy active living.' },
             ].map((prog, idx) => (
               <GSAPOneTimeBrandReveal key={idx} delay={idx * 0.08}>
-                <div className="bg-zinc-950 p-8 border border-zinc-800 corner-brackets flex flex-col md:flex-row md:items-center justify-between gap-6 hover:border-red-600 transition-colors">
-                  <div className="flex items-center gap-6">
-                    <span className="text-4xl font-display font-extrabold text-red-500">{prog.num}</span>
-                    <div>
-                      <h3 className="text-2xl font-display font-extrabold uppercase text-white">{prog.title}</h3>
-                      <p className="text-xs text-zinc-400 max-w-md mt-1">{prog.desc}</p>
+                <div className="bg-zinc-950 p-5 sm:p-8 border border-zinc-800 corner-brackets flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-6 hover:border-red-600 transition-colors max-w-full overflow-hidden">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 max-w-full overflow-hidden">
+                    <span className="text-3xl sm:text-4xl font-display font-extrabold text-red-500 shrink-0">{prog.num}</span>
+                    <div className="max-w-full overflow-hidden">
+                      <h3 className="text-lg sm:text-2xl font-display font-extrabold uppercase text-white tracking-tight break-words max-w-full">{prog.title}</h3>
+                      <p className="text-xs text-zinc-400 max-w-md mt-1 leading-relaxed">{prog.desc}</p>
                     </div>
                   </div>
                   <button
                     onClick={() => onNavigate('contact')}
-                    className="px-6 py-3 bg-red-600 text-white font-extrabold text-xs uppercase tracking-widest shrink-0 cursor-pointer"
+                    className="w-full sm:w-auto px-6 py-3.5 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs uppercase tracking-widest shrink-0 cursor-pointer text-center transition-colors"
                   >
                     INQUIRE AT GYM →
                   </button>
