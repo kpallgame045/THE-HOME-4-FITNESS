@@ -72,7 +72,7 @@ export const App: React.FC = () => {
           </>
         )}
 
-        {/* SECONDARY PAGE VIEWS (ABOUT, WHY US, PROGRAMS, TRAINERS, GALLERY, RESULTS, REVIEWS, CONTACT, LOCATION, JOIN) */}
+        {/* SECONDARY PAGE VIEWS (ABOUT, WHY US, PROGRAMS, GALLERY, RESULTS, REVIEWS, CONTACT, LOCATION, JOIN) */}
         {activeView !== 'home' && (
           <PageViews activeView={activeView} onNavigate={handleNavigate} />
         )}

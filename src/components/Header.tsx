@@ -147,7 +147,7 @@ export const Header: React.FC<HeaderProps> = ({ activeView, onNavigate }) => {
         {mobileMenuOpen && (
           <div className="lg:hidden mt-3 pt-3 border-t border-zinc-800/80 space-y-2 pb-2">
             <div className="text-[10px] font-mono tracking-widest text-red-500 uppercase px-2 mb-1">
-              // HOME 4 FITNESS NAVIGATION
+              HOME 4 FITNESS NAVIGATION
             </div>
             <div className="grid grid-cols-2 gap-1.5">
               {navItems.map((item) => (
