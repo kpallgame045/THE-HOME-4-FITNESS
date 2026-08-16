@@ -82,16 +82,16 @@ export const StickyStorySection: React.FC<StickyStorySectionProps> = ({ onNaviga
           {/* Active Story Frame Content */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-zinc-950 border border-zinc-800/80 p-6 sm:p-10 corner-brackets">
             {/* LEFT: TEXT DESCRIPTION */}
-            <div className="lg:col-span-6 space-y-6">
-              <div className="flex items-center gap-3">
-                <span className="text-5xl sm:text-6xl font-display font-extrabold text-red-500">
+            <div className="lg:col-span-6 space-y-6 max-w-full overflow-hidden">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 max-w-full overflow-hidden">
+                <span className="text-3xl sm:text-6xl font-display font-extrabold text-red-500 shrink-0">
                   {frames[activeFrame].step}
                 </span>
-                <div>
-                  <span className="text-xs font-mono text-zinc-400 uppercase tracking-widest block">
+                <div className="max-w-full overflow-hidden">
+                  <span className="text-[11px] sm:text-xs font-mono text-zinc-400 uppercase tracking-widest block">
                     {frames[activeFrame].subtitle}
                   </span>
-                  <h3 className="text-2xl sm:text-4xl font-display font-extrabold uppercase text-white tracking-tight">
+                  <h3 className="text-xl sm:text-4xl font-display font-extrabold uppercase text-white tracking-tight break-words max-w-full">
                     {frames[activeFrame].title}
                   </h3>
                 </div>

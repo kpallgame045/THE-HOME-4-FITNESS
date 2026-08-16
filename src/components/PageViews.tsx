@@ -656,11 +656,11 @@ export const PageViews: React.FC<PageViewsProps> = ({ activeView, onNavigate }) 
       {/* ================= 4. GALLERY VIEW ================= */}
       {activeView === 'gallery' && (
         <div className="space-y-16">
-          <div className="relative h-[40vh] min-h-[300px] w-full flex items-center justify-center overflow-hidden bg-black border-b border-zinc-900">
+          <div className="relative py-12 sm:py-20 w-full flex items-center justify-center overflow-hidden bg-black border-b border-zinc-900">
             <img
               src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop"
               alt="Gallery"
-              className="w-full h-full object-cover filter brightness-[0.35] contrast-[1.25]"
+              className="absolute inset-0 w-full h-full object-cover filter brightness-[0.35] contrast-[1.25]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
             <div className="relative z-10 max-w-5xl mx-auto px-4 text-center space-y-4">
@@ -669,7 +669,7 @@ export const PageViews: React.FC<PageViewsProps> = ({ activeView, onNavigate }) 
                   as="h1"
                   text="INSIDE"
                   redText="HOME 4 FITNESS."
-                  className="text-4xl sm:text-7xl"
+                  className="text-3xl sm:text-7xl"
                 />
               </GSAPOneTimeBrandReveal>
             </div>
@@ -697,11 +697,11 @@ export const PageViews: React.FC<PageViewsProps> = ({ activeView, onNavigate }) 
       {/* ================= 5. TRANSFORMATIONS & TESTIMONIALS ================= */}
       {(activeView === 'transformations' || activeView === 'testimonials') && (
         <div className="space-y-16">
-          <div className="relative h-[40vh] min-h-[300px] w-full flex items-center justify-center overflow-hidden bg-black border-b border-zinc-900">
+          <div className="relative py-12 sm:py-20 w-full flex items-center justify-center overflow-hidden bg-black border-b border-zinc-900">
             <img
               src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=2070&auto=format&fit=crop"
               alt="Member Results"
-              className="w-full h-full object-cover filter brightness-[0.35] contrast-[1.25]"
+              className="absolute inset-0 w-full h-full object-cover filter brightness-[0.35] contrast-[1.25]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
             <div className="relative z-10 max-w-5xl mx-auto px-4 text-center space-y-4">
@@ -710,7 +710,7 @@ export const PageViews: React.FC<PageViewsProps> = ({ activeView, onNavigate }) 
                   as="h1"
                   text="REAL PEOPLE."
                   redText="REAL PROGRESS."
-                  className="text-4xl sm:text-7xl"
+                  className="text-3xl sm:text-7xl"
                 />
               </GSAPOneTimeBrandReveal>
             </div>
@@ -718,18 +718,18 @@ export const PageViews: React.FC<PageViewsProps> = ({ activeView, onNavigate }) 
 
           <div className="max-w-3xl mx-auto px-4 text-center space-y-6">
             <GSAPOneTimeBrandReveal>
-              <div className="bg-zinc-950 p-12 border border-zinc-800 corner-brackets space-y-4">
+              <div className="bg-zinc-950 p-6 sm:p-12 border border-zinc-800 corner-brackets space-y-4">
                 <Trophy className="w-12 h-12 text-red-500 mx-auto" />
-                <h3 className="text-2xl font-display font-extrabold uppercase">
+                <h3 className="text-xl sm:text-2xl font-display font-extrabold uppercase">
                   {activeView === 'transformations' ? 'REAL MEMBER TRANSFORMATIONS COMING SOON' : 'REAL MEMBER REVIEWS COMING SOON'}
                 </h3>
-                <p className="text-zinc-400 text-sm max-w-md mx-auto leading-relaxed">
+                <p className="text-zinc-400 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
                   Verified member stories and progress photos will be uploaded directly. Visit Home 4 Fitness in Sector 8 to experience the workout environment firsthand.
                 </p>
                 <div className="pt-4">
                   <button
                     onClick={() => onNavigate('contact')}
-                    className="px-6 py-3 bg-red-600 text-white font-extrabold text-xs uppercase tracking-widest cursor-pointer"
+                    className="w-full sm:w-auto px-6 py-3.5 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs uppercase tracking-widest cursor-pointer transition-colors shadow-[0_0_20px_rgba(229,9,20,0.5)]"
                   >
                     VISIT GYM IN SECTOR 8 →
                   </button>
@@ -743,11 +743,11 @@ export const PageViews: React.FC<PageViewsProps> = ({ activeView, onNavigate }) 
       {/* ================= 6. INSTAGRAM VIEW ================= */}
       {activeView === 'instagram' && (
         <div className="space-y-16">
-          <div className="relative h-[40vh] min-h-[300px] w-full flex items-center justify-center overflow-hidden bg-black border-b border-zinc-900">
+          <div className="relative py-12 sm:py-20 w-full flex items-center justify-center overflow-hidden bg-black border-b border-zinc-900">
             <img
               src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=2070&auto=format&fit=crop"
               alt="Instagram"
-              className="w-full h-full object-cover filter brightness-[0.35] contrast-[1.25]"
+              className="absolute inset-0 w-full h-full object-cover filter brightness-[0.35] contrast-[1.25]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
             <div className="relative z-10 max-w-5xl mx-auto px-4 text-center space-y-4">
@@ -757,25 +757,25 @@ export const PageViews: React.FC<PageViewsProps> = ({ activeView, onNavigate }) 
                   as="h1"
                   text="FOLLOW"
                   redText="HOME 4 FITNESS."
-                  className="text-4xl sm:text-7xl"
+                  className="text-3xl sm:text-7xl"
                 />
-                <p className="text-zinc-400 font-mono text-sm mt-2">@home4fitness_gandhinagar</p>
+                <p className="text-zinc-400 font-mono text-xs sm:text-sm mt-2">@home4fitness_gandhinagar</p>
               </GSAPOneTimeBrandReveal>
             </div>
           </div>
 
           <div className="max-w-4xl mx-auto px-4 text-center space-y-8">
             <GSAPOneTimeBrandReveal>
-              <div className="bg-zinc-950 p-8 border border-zinc-800 corner-brackets space-y-6">
-                <h3 className="text-2xl font-display font-extrabold uppercase">CONNECT ON SOCIAL MEDIA</h3>
-                <p className="text-zinc-300 text-sm max-w-lg mx-auto leading-relaxed">
+              <div className="bg-zinc-950 p-6 sm:p-8 border border-zinc-800 corner-brackets space-y-6">
+                <h3 className="text-xl sm:text-2xl font-display font-extrabold uppercase">CONNECT ON SOCIAL MEDIA</h3>
+                <p className="text-zinc-300 text-xs sm:text-sm max-w-lg mx-auto leading-relaxed">
                   Check out workout clips, gym updates, and community highlights on our official Instagram account.
                 </p>
                 <a
                   href="https://instagram.com/home4fitness_gandhinagar"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs uppercase tracking-widest shadow-[0_0_30px_rgba(229,9,20,0.5)]"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs uppercase tracking-widest shadow-[0_0_30px_rgba(229,9,20,0.5)]"
                 >
                   <Instagram className="w-4 h-4" />
                   <span>FOLLOW @HOME4FITNESS_GANDHINAGAR →</span>
@@ -867,7 +867,7 @@ export const PageViews: React.FC<PageViewsProps> = ({ activeView, onNavigate }) 
             <GSAPOneTimeBrandReveal>
               <div className="relative overflow-hidden bg-zinc-950 border border-zinc-800/80 p-8 sm:p-14 corner-brackets shadow-2xl">
                 {/* Background Large Transparent "CONTACT" Typography */}
-                <div className="absolute right-4 top-1/2 -translate-y-1/2 text-[14rem] sm:text-[20rem] font-display font-extrabold text-white/[0.03] select-none pointer-events-none z-0">
+                <div className="hidden sm:block absolute right-4 top-1/2 -translate-y-1/2 text-[20rem] font-display font-extrabold text-white/[0.03] select-none pointer-events-none z-0">
                   CONTACT
                 </div>
                 <div className="absolute inset-0 bg-grid-pattern opacity-15 pointer-events-none" />

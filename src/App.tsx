@@ -59,7 +59,7 @@ export const App: React.FC = () => {
       <Header activeView={activeView} onNavigate={handleNavigate} />
 
       {/* 5. MAIN CONTENT AREA WITH TOP PADDING OFFSET FOR FIXED HEADER */}
-      <main className="relative z-10 flex-grow pt-20 sm:pt-24">
+      <main className="relative z-10 flex-grow pt-24 sm:pt-28 w-full max-w-full overflow-x-hidden">
         {/* HOMEPAGE VIEW FLOW */}
         {activeView === 'home' && (
           <>
