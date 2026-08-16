@@ -50,14 +50,14 @@ export const StickyStorySection: React.FC<StickyStorySectionProps> = ({ onNaviga
           {/* Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-600/10 border border-red-600/30 text-red-500 text-xs font-mono tracking-widest uppercase mb-3">
-                // PHILOSOPHY & STORY
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-600/10 border border-red-600/30 text-red-500 text-[11px] sm:text-xs font-mono tracking-widest uppercase mb-3">
+                PHILOSOPHY & STORY
               </div>
               <EditorialHeadingReveal
                 as="h2"
                 text="THE HOME 4 FITNESS"
                 redText="CODE."
-                className="text-3xl sm:text-5xl"
+                className="text-2xl sm:text-5xl"
               />
             </div>
 

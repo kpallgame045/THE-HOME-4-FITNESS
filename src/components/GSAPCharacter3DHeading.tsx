@@ -81,7 +81,7 @@ export const GSAPCharacter3DHeading: React.FC<GSAPCharacter3DHeadingProps> = ({
             (redText && redText.toUpperCase().includes(word.toUpperCase()));
 
           return (
-            <span key={wordIdx} className="inline-block whitespace-nowrap mr-[0.25em] transform-gpu">
+            <span key={wordIdx} className="inline-block max-w-full break-words mr-[0.25em] transform-gpu">
               {word.split('').map((char, charIdx) => (
                 <span
                   key={charIdx}

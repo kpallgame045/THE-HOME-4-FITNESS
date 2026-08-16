@@ -39,7 +39,7 @@ export const ShortAboutSection: React.FC<ShortAboutSectionProps> = ({ onNavigate
 
                 <div className="absolute top-4 left-4 bg-zinc-900/90 border border-zinc-700 px-3 py-1.5 backdrop-blur-md">
                   <span className="text-[10px] font-mono text-red-500 tracking-widest uppercase">
-                    FACILITY // SECTOR 8 GANDHINAGAR
+                    FACILITY · SECTOR 8 GANDHINAGAR
                   </span>
                 </div>
               </div>
@@ -47,8 +47,8 @@ export const ShortAboutSection: React.FC<ShortAboutSectionProps> = ({ onNavigate
 
             {/* RIGHT: EDITORIAL ABOUT CONTENT */}
             <div className="lg:col-span-6 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-600/10 border border-red-600/30 text-red-500 text-xs font-mono tracking-widest uppercase">
-                // ABOUT HOME 4 FITNESS
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-600/10 border border-red-600/30 text-red-500 text-[11px] sm:text-xs font-mono tracking-widest uppercase">
+                ABOUT HOME 4 FITNESS
               </div>
 
               {/* Masked Editorial Heading */}
@@ -56,7 +56,7 @@ export const ShortAboutSection: React.FC<ShortAboutSectionProps> = ({ onNavigate
                 as="h2"
                 text="MORE THAN JUST A GYM."
                 redText="BUILD A STRONGER ROUTINE."
-                className="text-3xl sm:text-5xl"
+                className="text-2xl sm:text-5xl"
               />
 
               <p className="text-zinc-300 text-base sm:text-lg font-normal leading-relaxed">
@@ -86,7 +86,7 @@ export const ShortAboutSection: React.FC<ShortAboutSectionProps> = ({ onNavigate
               <div className="pt-4">
                 <button
                   onClick={() => onNavigate('about')}
-                  className="group inline-flex items-center gap-3 px-7 py-3.5 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs uppercase tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(229,9,20,0.4)] cursor-pointer"
+                  className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-7 py-3.5 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs uppercase tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(229,9,20,0.4)] cursor-pointer"
                 >
                   <span>EXPLORE OUR STORY</span>
                   <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />

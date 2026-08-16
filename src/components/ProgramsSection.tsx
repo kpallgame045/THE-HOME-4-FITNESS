@@ -64,14 +64,14 @@ export const ProgramsSection: React.FC<ProgramsSectionProps> = ({ onNavigate }) 
           {/* Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-600/10 border border-red-600/30 text-red-500 text-xs font-mono tracking-widest uppercase mb-3">
-                // TRAINING PROGRAMS
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-600/10 border border-red-600/30 text-red-500 text-[11px] sm:text-xs font-mono tracking-widest uppercase mb-3">
+                TRAINING PROGRAMS
               </div>
               <EditorialHeadingReveal
                 as="h2"
                 text="WORKOUT"
                 redText="DISCIPLINES."
-                className="text-3xl sm:text-5xl"
+                className="text-2xl sm:text-5xl"
               />
             </div>
             <button
@@ -95,7 +95,7 @@ export const ProgramsSection: React.FC<ProgramsSectionProps> = ({ onNavigate }) 
                   onMouseEnter={() => setHoveredProgram(program.id)}
                   onMouseLeave={() => setHoveredProgram(null)}
                   onClick={() => onNavigate('programs')}
-                  className="group relative overflow-hidden bg-zinc-950 border border-zinc-800/80 p-6 sm:p-8 cursor-pointer transition-all duration-500 hover:border-red-600/80 hover:bg-zinc-900/90 corner-brackets"
+                  className="group relative overflow-hidden bg-zinc-950 border border-zinc-800/80 p-5 sm:p-8 cursor-pointer transition-all duration-500 hover:border-red-600/80 hover:bg-zinc-900/90 corner-brackets max-w-full"
                 >
                   {/* Background Hover Image Reveal */}
                   <div
@@ -114,19 +114,19 @@ export const ProgramsSection: React.FC<ProgramsSectionProps> = ({ onNavigate }) 
                   {/* Red Border Highlight */}
                   <div className="absolute left-0 top-0 bottom-0 w-1 bg-red-600 opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                  <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-                    <div className="flex items-start gap-4 sm:gap-6">
-                      <span className="text-3xl sm:text-4xl font-display font-extrabold text-zinc-600 group-hover:text-red-500 transition-colors">
+                  <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-6">
+                    <div className="flex items-start gap-3 sm:gap-6 max-w-full overflow-hidden">
+                      <span className="text-2xl sm:text-4xl font-display font-extrabold text-zinc-600 group-hover:text-red-500 transition-colors shrink-0">
                         {program.num}
                       </span>
-                      <div>
+                      <div className="max-w-full overflow-hidden">
                         <div className="flex items-center gap-2 mb-1">
-                          <IconComp className="w-4 h-4 text-red-500" />
+                          <IconComp className="w-3.5 h-3.5 text-red-500 shrink-0" />
                           <span className="text-[10px] font-mono text-zinc-400 tracking-widest uppercase">
-                            // {program.category}
+                            {program.category}
                           </span>
                         </div>
-                        <h3 className="text-xl sm:text-3xl font-display font-extrabold uppercase text-white tracking-tight group-hover:translate-x-2 transition-transform">
+                        <h3 className="text-lg sm:text-3xl font-display font-extrabold uppercase text-white tracking-tight break-words max-w-full group-hover:translate-x-1 sm:group-hover:translate-x-2 transition-transform">
                           {program.title}
                         </h3>
                         <p className="text-zinc-400 text-xs sm:text-sm mt-2 max-w-2xl leading-relaxed">
